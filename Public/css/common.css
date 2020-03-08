@@ -308,6 +308,7 @@ a:active{
 	top: 0;
 	z-index: 999;
 	position: fixed;
+	box-shadow: 0 0px 10px #f0f0f0;
 }
 .n-top .logo{
 	float: left;
@@ -322,14 +323,17 @@ a:active{
 	height: 66px;
 }
 .n-nav{
-	float: left;
-	margin-left: 54px;
+	float: none;
+	margin-left: 0px;
+	text-align: center;
 }
 .n-nav a{
-	float: left;
+	float: none;
 	font-size: 16px;
 	color: #605ab0;
-	margin-right: 32px;
+	display: inline-block;
+	margin-right: 16px;
+    margin-left: 16px;
 	height: 66px;
 	line-height: 66px;
 }
