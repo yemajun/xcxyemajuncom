@@ -1,0 +1,64 @@
+.error-center{
+				background: url(../images/404/error5.png) no-repeat;
+				width: 540px;
+				height: 500px;
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%,-60%);
+				text-align: center;
+			}
+			.error-center a {
+				display: inline-block;
+				border-radius: 10px;
+				width: 116px;
+				height: 34px;
+				line-height: 34px;
+				font-size: 16px;
+				color: #FFFFFF;
+				background: #605ab0;
+				margin-top: 415px;
+			}
+			.error-center a:hover{
+				background: #605ab0;
+			}
+			.e1{
+				background: url(../images/404/error1.png);
+				width: 529px;
+				height: 248px;
+				position: fixed;
+				left: 0;
+				top: 0;
+			}
+			.e2{
+				background: url(../images/404/error2.png);
+				width: 351px;
+				height: 159px;
+				position: fixed;
+				right: 0;
+				top: 0;
+			}
+			.e3{
+				background: url(../images/404/error3.png);
+				width: 137px;
+				height: 319px;
+				position: fixed;
+				right: 0;
+				bottom: 0;
+			}
+			.e4{
+				background: url(../images/404/error4.png);
+				width: 271px;
+				height: 125px;
+				position: fixed;
+				left: 380px;
+				bottom: 0;
+			}
+			.e5{
+				background: url(../images/404/error6.png);
+				width: 158px;
+				height: 107px;
+				position: fixed;
+				right: 428px;
+				bottom:67px;
+			}
