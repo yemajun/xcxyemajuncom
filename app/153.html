@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Ua67b1f551f544e2e8ea62dcb1f3c8dfby.png"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Ua67b1f551f544e2e8ea62dcb1f3c8dfby.png"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U3efbb74646c3408780f693837bfe8a41G.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U595a70452a6947daac7991b7bfd49f73Q.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U2ca52fbca4934b95b844c62f7846daf0i.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U8357c5910d51499d84fc48e493a410acH.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U3efbb74646c3408780f693837bfe8a41G.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U595a70452a6947daac7991b7bfd49f73Q.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U2ca52fbca4934b95b844c62f7846daf0i.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U8357c5910d51499d84fc48e493a410acH.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>京东旗下优质二手交易平台。海量优品低价买，闲置二手快速卖。拍拍二手，物尽其用!</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Ue31fd3eb921a49e8aa544fe710be87f1R.jpg"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Ue31fd3eb921a49e8aa544fe710be87f1R.jpg"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U4ec093bed3024c72af3b691350d44bb2D.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Uc67f2bd0d658403ba531995d9db65e6bX.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U26ece5254a86437c866ee353218ca19dT.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Uf20955ef87bc47c4bd7f63e1de3ea94bP.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U4ec093bed3024c72af3b691350d44bb2D.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Uc67f2bd0d658403ba531995d9db65e6bX.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U26ece5254a86437c866ee353218ca19dT.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Uf20955ef87bc47c4bd7f63e1de3ea94bP.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>达电影是万达院线旗下官方购票软件，覆盖全国万达影城的影片资讯，致力打造集购票、娱乐、生活于一体的休闲娱乐服务平台。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Uf83e183361bd4793b3d3767696a8fbfbR.jpg"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Uf83e183361bd4793b3d3767696a8fbfbR.jpg"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U0a50b25b37cf4c5caf8eb7fbe6812e06o.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U886c955f8ce64e4880c827d3b1234ab1D.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U615d0beabd1147b6807b304bc4df50555.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Ua62317b25bfe478eacdcd5c507dc431dn.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U0a50b25b37cf4c5caf8eb7fbe6812e06o.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U886c955f8ce64e4880c827d3b1234ab1D.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U615d0beabd1147b6807b304bc4df50555.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Ua62317b25bfe478eacdcd5c507dc431dn.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>移动健身助手，训练数目：100+,动作库：300+；自定义训练组合：无限。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

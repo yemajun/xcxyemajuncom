@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U55db929c827d49fb8494040ec8d98d4cD.jpg"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U55db929c827d49fb8494040ec8d98d4cD.jpg"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Ue0f51a4edef34f5e8c20f4cd810e232cm.jpg"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U0989f87a1d37463c8e7a927ade005232k.jpg"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U43c8be64ca164692927b235661631dc3b.jpg"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U5ec99270dc4e4c38992dfffbb6433d43w.jpg"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Ue0f51a4edef34f5e8c20f4cd810e232cm.jpg"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U0989f87a1d37463c8e7a927ade005232k.jpg"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U43c8be64ca164692927b235661631dc3b.jpg"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U5ec99270dc4e4c38992dfffbb6433d43w.jpg"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>东方头-东方网旗下的一款会自动学习的资讯软件,它会分析你的兴趣爱好,为你推荐喜欢的内容,并且越用越懂你。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

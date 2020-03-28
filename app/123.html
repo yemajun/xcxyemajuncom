@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U68870fbb387a48758fc6352ca454c025I.jpg"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U68870fbb387a48758fc6352ca454c025I.jpg"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U13481ba8db0d407bad84fa762c8b00dcr.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Uc7dd07bdcc574f7185711134825b5adac.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Ue51425473ed54aca92b694cdfec5d222G.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U72392498cb664ef99f5428fba3a19d7fE.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Ub51e0bc154674063a8c59060c21f1c8dp.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U13481ba8db0d407bad84fa762c8b00dcr.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Uc7dd07bdcc574f7185711134825b5adac.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Ue51425473ed54aca92b694cdfec5d222G.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U72392498cb664ef99f5428fba3a19d7fE.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Ub51e0bc154674063a8c59060c21f1c8dp.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>14 年 lT 计算机学习网站 51CTO 旗下免费刷题小程序，现已入驻软考题库、计算机二级题库，提供历年真题、模拟题、每日一练等服务。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

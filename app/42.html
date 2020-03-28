@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Hfcd1fbef65b245d78d56082e95258466L.png"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Hfcd1fbef65b245d78d56082e95258466L.png"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H29a0d0f4cea8466697f9168d876bc9ecs.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H8e21339b668b40a9b5fe81a120f15f3el.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Hcf357a9d9c244034911f66ef9a4218eam.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H66178b2d4ea74f33a993b3e5031e38d4W.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H509d2ee705174ee2a22c2b81e87a502ah.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H29a0d0f4cea8466697f9168d876bc9ecs.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H8e21339b668b40a9b5fe81a120f15f3el.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Hcf357a9d9c244034911f66ef9a4218eam.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H66178b2d4ea74f33a993b3e5031e38d4W.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H509d2ee705174ee2a22c2b81e87a502ah.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>微信官方出品的记账小工具，支持一键同步微信账单。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Hfab17d10efd04c0aa48d772d7bc64810x.jpg"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Hfab17d10efd04c0aa48d772d7bc64810x.jpg"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H40df79b98e8b419bae50709c8bbf48c1h.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Hb6b3f8a125bc471f95759a1dce9a48cb7.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H00d3c1382a5145b5bef71df324b24dbaA.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H1e12b91a5186497aa4a4a3622ed85f44X.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H40df79b98e8b419bae50709c8bbf48c1h.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Hb6b3f8a125bc471f95759a1dce9a48cb7.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H00d3c1382a5145b5bef71df324b24dbaA.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H1e12b91a5186497aa4a4a3622ed85f44X.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>怪兽充电致力于让所有人在任何场景下都可以续电，维持生活的运转及与外界的沟通。让每个人，随时随地充电，美好生活永远在线！</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

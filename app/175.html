@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Ucb92eac6f6b4489bac9d94f50719a4b4G.png"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Ucb92eac6f6b4489bac9d94f50719a4b4G.png"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U7df35d0675fe4e19b6b287b635274156c.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U76422ddb9fea40a3b642538589b3fe66N.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Uc32f1168df1f4b75a2ab4d953a6a5689v.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Uefe87b6e53824bc09563a2421b16197c2.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U7df35d0675fe4e19b6b287b635274156c.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U76422ddb9fea40a3b642538589b3fe66N.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Uc32f1168df1f4b75a2ab4d953a6a5689v.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Uefe87b6e53824bc09563a2421b16197c2.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>Luckin Coffee专业咖啡新鲜式，优选上等阿拉比卡咖啡豆，外卖自提新鲜速达。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

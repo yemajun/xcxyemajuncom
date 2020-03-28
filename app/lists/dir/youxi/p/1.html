@@ -49,7 +49,7 @@
 			<a class="list" href="/app/99.html" title="跳一跳" target="_blank">
 				<div class="imgLeft">
 					<span>
-						<img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Hd7a7c3e11b6042088a5630cba238375b8.jpg" style="width: 100%;">
+						<img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Hd7a7c3e11b6042088a5630cba238375b8.jpg" style="width: 100%;">
 					</span>
 				</div>
 				<div class="dataRight">
@@ -74,6 +74,14 @@
 
 
 </div>
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         var $index = 0;

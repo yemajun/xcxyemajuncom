@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H8a8874b25f0445669562f15ed894782bN.jpg"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H8a8874b25f0445669562f15ed894782bN.jpg"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Hc75b771ce099475fb1c2ecc9ab5878caQ.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H6337ea71f0964773bb4dfec592e0da5c4.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Hf81c6061852d4fbaaef0d49232864355s.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H40c19894d30b48339883378d1032c862P.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Hc75b771ce099475fb1c2ecc9ab5878caQ.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H6337ea71f0964773bb4dfec592e0da5c4.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Hf81c6061852d4fbaaef0d49232864355s.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H40c19894d30b48339883378d1032c862P.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>腾讯客服为您提供腾讯游戏、支付、微信、社交等各类产品的自助与人工服务。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

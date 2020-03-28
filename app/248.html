@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Ua4ef6d89fd3b456cb9aad05b1b13ad8fi.jpg"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Ua4ef6d89fd3b456cb9aad05b1b13ad8fi.jpg"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U93c8b1fd64084a5da6f299b9c07da5ac4.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U85c52575bbd94b14b069d74a9b870739d.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U6f9636911d3241ba95a6b069066937602.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U93c8b1fd64084a5da6f299b9c07da5ac4.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U85c52575bbd94b14b069d74a9b870739d.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U6f9636911d3241ba95a6b069066937602.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>12306火车票订票助手，火车票抢票神器。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

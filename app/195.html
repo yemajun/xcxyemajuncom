@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U152b1b3d07f44de5928a229839cbc232K.jpg"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U152b1b3d07f44de5928a229839cbc232K.jpg"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Ub1944bba8c624894b45c93b91d79558fh.jpg"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Ue944da8d363f41cc98022621ed9864deY.jpg"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U388f912b09544acd8495340f8168c7eeu.jpg"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U72dc78af388947dba3fe4c4e873709c1L.jpg"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Ub1944bba8c624894b45c93b91d79558fh.jpg"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Ue944da8d363f41cc98022621ed9864deY.jpg"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U388f912b09544acd8495340f8168c7eeu.jpg"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U72dc78af388947dba3fe4c4e873709c1L.jpg"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>腾讯NOW直播是汇聚网红大咖、明星艺人、才艺主播的24小时实时互动直播平台。通过NOW你会发现也在直播、全民直播时代来了！</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

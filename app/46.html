@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Hc72b041c61c747cea90589084469fbccz.png"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Hc72b041c61c747cea90589084469fbccz.png"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Had3042f2be3748cfabf51be86f21870bq.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H214d329e84504f21b8fb4354cfbb4e82l.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Hbebac5064c1a464a8274eafe1132f5c08.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Had3042f2be3748cfabf51be86f21870bq.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H214d329e84504f21b8fb4354cfbb4e82l.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Hbebac5064c1a464a8274eafe1132f5c08.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>编辑赞赏账户的信息，管理收到的赞赏。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

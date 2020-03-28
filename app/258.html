@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U823764fc2a7d4e86ae483bf274097064b.png"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U823764fc2a7d4e86ae483bf274097064b.png"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U22c86db7308948e699c0688a11de3d01k.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U445f3f4ea9534daab5a566f0e7b5246ei.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Udf8bfa1d1f5643c18f320741f493a8c39.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U22c86db7308948e699c0688a11de3d01k.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U445f3f4ea9534daab5a566f0e7b5246ei.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Udf8bfa1d1f5643c18f320741f493a8c39.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>最便捷的顺丰速运自动服务平台，快速寄件，及时跟踪快件状态，让您用着放心、舒心。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

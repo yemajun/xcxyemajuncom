@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H728c28a1457e4ff2ba3abfac13aedf7b1.png"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H728c28a1457e4ff2ba3abfac13aedf7b1.png"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U738abda9527148c3a8da634fbece844aT.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U3308376f90114a87ab8647bc4fafe7f5N.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U9c8d7e80ef0846df84c544b93caec4efD.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Hf46ca52b3ab8437bae777b44900b6befC.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U738abda9527148c3a8da634fbece844aT.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U3308376f90114a87ab8647bc4fafe7f5N.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U9c8d7e80ef0846df84c544b93caec4efD.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Hf46ca52b3ab8437bae777b44900b6befC.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>导入有天空的照片，让天空‘动’起来，魔法天空瞬间刷爆你的朋友圈。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

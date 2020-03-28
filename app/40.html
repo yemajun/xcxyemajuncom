@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H60aed495d5c542b9b6bba7b315330558b.png"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H60aed495d5c542b9b6bba7b315330558b.png"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H688f56c864bd4e80a75059739e00386fX.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H6970e1f76a024621955be99f6e2f13b45.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Hb246d91a59c5428a84773b2f99da2aee8.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H688f56c864bd4e80a75059739e00386fX.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H6970e1f76a024621955be99f6e2f13b45.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Hb246d91a59c5428a84773b2f99da2aee8.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>中国银行外汇牌价小程序是中国银行推出的微信小程序应用。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

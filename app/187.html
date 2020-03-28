@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Uef2e7c17f08e454e9c85df40731ce7c9z.jpg"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Uef2e7c17f08e454e9c85df40731ce7c9z.jpg"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U3265ac583a2d423f9e357a74bb4a2b27y.jpg"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Uf12b64c3fa204e8789155a6c48c504f41.jpg"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U01e263d250ab4e59831aa6de55aa20f3U.jpg"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U86b22cc98ee344e78f45fb18d4a34bd1c.jpg"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U61aa5aff67514dd8ba65084af88084afk.jpg"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U3265ac583a2d423f9e357a74bb4a2b27y.jpg"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Uf12b64c3fa204e8789155a6c48c504f41.jpg"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U01e263d250ab4e59831aa6de55aa20f3U.jpg"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U86b22cc98ee344e78f45fb18d4a34bd1c.jpg"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U61aa5aff67514dd8ba65084af88084afk.jpg"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>同程旅游官方小程序，提供机票、酒店、火车票、汽车票、景点门票等预订服务，品质旅游让您旅行预订更放心。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

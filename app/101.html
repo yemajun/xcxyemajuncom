@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H3325793471024f7c9427f0886dd8aa86q.png"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H3325793471024f7c9427f0886dd8aa86q.png"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H583a5d2a444d42249351dc7acf923e9ew.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Hedbf8cd9c1054d8b813555607f1c15eaR.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H161c0d5f77024521926704557308f5934.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H87a6ed2ae1704b84ac7c527d6672c3218.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H583a5d2a444d42249351dc7acf923e9ew.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Hedbf8cd9c1054d8b813555607f1c15eaR.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H161c0d5f77024521926704557308f5934.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H87a6ed2ae1704b84ac7c527d6672c3218.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>诸葛找房查房价是由诸葛找房开发的一款查房价小程序，作为国内领先的第三方找房比价平台，诸葛找房基于大数据底层算法及人工智能技术对房产价值进行准确评估，同时支持查看在好友中的资产排名以及已查询房产价格变化。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

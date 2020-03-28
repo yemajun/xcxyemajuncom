@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Hd6bf603ffcc943da98331ce40580f9939.jpg"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Hd6bf603ffcc943da98331ce40580f9939.jpg"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U8087457002ec4a73923263494337893fw.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U7d75ef057e0c4cb38a8b651e00a2ae54U.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Uce8d2bbf30af4936aa9e72d9800d5809I.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Ufdfc7ea977074f8d8178838b90515a9fh.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U8087457002ec4a73923263494337893fw.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U7d75ef057e0c4cb38a8b651e00a2ae54U.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Uce8d2bbf30af4936aa9e72d9800d5809I.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Ufdfc7ea977074f8d8178838b90515a9fh.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>潮蛇SNAKE球鞋回收小程序，提供专业的球鞋估价回收服务，帮助您让闲置球鞋快速变现，一键回收，无需等待买家，最快8小时到账。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

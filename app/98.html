@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Hd33c5421c4ea4be4a791a5af862b90a7N.png"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Hd33c5421c4ea4be4a791a5af862b90a7N.png"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H41975dfaf0b14cc9a8fb7fc602d6418cM.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H4435cffa78bd46f0b66a67ab3a78506f5.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Hec595061d672427494c72ba02e118f19F.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H06508657b0004d589dbe0b9c8e6bfd36y.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H41975dfaf0b14cc9a8fb7fc602d6418cM.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H4435cffa78bd46f0b66a67ab3a78506f5.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Hec595061d672427494c72ba02e118f19F.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H06508657b0004d589dbe0b9c8e6bfd36y.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>腾讯投票是一款由腾讯官方开发的微信投票工具，在你不能直接做出决定的时候发起投票来决定！你可以发起单选投票，也能发起多选投票，创建投票成功之后就可以直接点击右上方的分享功能，把它分享到你的朋友圈或者微信群、微信好友！</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H9f6f45baf49a418d873604d2d8403403R.jpg"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H9f6f45baf49a418d873604d2d8403403R.jpg"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H6cb8fb77f1de4134b74ca758eb893b46i.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Hffa34f88c2244520833ef57ef391d7507.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H26889b26f3c043818140b06e747d515ea.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H1d4113bfca594fc5a6fe82d3cac3e40aU.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H2191c1d45e0c47ce9e9697841a24c5553.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H6cb8fb77f1de4134b74ca758eb893b46i.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Hffa34f88c2244520833ef57ef391d7507.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H26889b26f3c043818140b06e747d515ea.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H1d4113bfca594fc5a6fe82d3cac3e40aU.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H2191c1d45e0c47ce9e9697841a24c5553.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>腾讯文档是一款支持随时随地创建、编辑的多人协作式免费文档工具，目前已支持word和Excel 类型的文件，具有多端同步、云端实时保存、支持多人协作编辑等权限。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

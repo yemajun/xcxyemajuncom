@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Hb2e0c0e3cc6b4f70be71e7f552500cfbj.jpg"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Hb2e0c0e3cc6b4f70be71e7f552500cfbj.jpg"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/He83cb888efe54c70bde081b67e2d8a44Q.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H5dcd3a4d856f4a7caa581488f5ff1672g.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H8cb476e4d653466089aac97dba458129O.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/He83cb888efe54c70bde081b67e2d8a44Q.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H5dcd3a4d856f4a7caa581488f5ff1672g.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H8cb476e4d653466089aac97dba458129O.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>免费从图片/PDF中提取文字，并提供结果的复制、编辑和导出word/PDF文档。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

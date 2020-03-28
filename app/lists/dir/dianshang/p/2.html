@@ -49,7 +49,7 @@
 			<a class="list" href="/app/139.html" title="小红书" target="_blank">
 				<div class="imgLeft">
 					<span>
-						<img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U25437cd4137d49909fa6bf7629abadd2A.png" style="width: 100%;">
+						<img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U25437cd4137d49909fa6bf7629abadd2A.png" style="width: 100%;">
 					</span>
 				</div>
 				<div class="dataRight">
@@ -61,7 +61,7 @@
 			</a><a class="list" href="/app/137.html" title="转转" target="_blank">
 				<div class="imgLeft">
 					<span>
-						<img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Ucb9d976170f54ac78d1227ba4294abc7w.jpg" style="width: 100%;">
+						<img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Ucb9d976170f54ac78d1227ba4294abc7w.jpg" style="width: 100%;">
 					</span>
 				</div>
 				<div class="dataRight">
@@ -73,7 +73,7 @@
 			</a><a class="list" href="/app/22.html" title="华为商城" target="_blank">
 				<div class="imgLeft">
 					<span>
-						<img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Hb5a46a6dd7ba4996b5ad5649a0e7791bF.jpg" style="width: 100%;">
+						<img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Hb5a46a6dd7ba4996b5ad5649a0e7791bF.jpg" style="width: 100%;">
 					</span>
 				</div>
 				<div class="dataRight">
@@ -98,6 +98,14 @@
 
 
 </div>
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         var $index = 0;

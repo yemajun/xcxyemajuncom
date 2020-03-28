@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U38c2c4f390584d7081c444d58c817beaR.jpg"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U38c2c4f390584d7081c444d58c817beaR.jpg"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Ueab401997c884117963106996f03bc21r.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U8d0429037bf446469c50629f1532c5b7s.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U9500e2694c284d208c5afbd3c80c15f3X.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Ueab401997c884117963106996f03bc21r.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U8d0429037bf446469c50629f1532c5b7s.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U9500e2694c284d208c5afbd3c80c15f3X.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>一款间隔运动计时器，可用来对平板运动，举杠铃等运动计时。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

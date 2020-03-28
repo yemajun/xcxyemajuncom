@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Hc527515f55604917999fd4b2bc4b37c8f.jpg"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Hc527515f55604917999fd4b2bc4b37c8f.jpg"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Ue4137cc63f1e4486b7439518da203939w.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U96c1b1d3718e41169c6a8a7b32cf5587S.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Uf3c0585f3744467592ccc62b85cb5312f.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U22cadf8fe40e4925a4ffa52147f76bceL.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Ue4137cc63f1e4486b7439518da203939w.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U96c1b1d3718e41169c6a8a7b32cf5587S.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Uf3c0585f3744467592ccc62b85cb5312f.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U22cadf8fe40e4925a4ffa52147f76bceL.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>腾讯课堂是腾讯推出的在线直播学习平台，平台涵盖了IT编程、软件开发、新媒体营销、考研考证、职业培训、公考考级、英语口语、中小学升学备战等上万门专业网课课程及精品公开课，完美仿真学习场景，让你更快更高效吸收知识！腾讯课堂，学习成就梦想！</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

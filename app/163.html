@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U0bed0d3a1d9b41b7b9caa795faf232f6b.jpg"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U0bed0d3a1d9b41b7b9caa795faf232f6b.jpg"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U07224b6bfeb94786a5e2bbc3f6a66379m.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U3d700273f4874893a89d8be040d99be8w.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Ub8f936d879414a889769c19f91e3a8823.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U743ace5439334cb7ae1d1135f2912a84V.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U07224b6bfeb94786a5e2bbc3f6a66379m.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U3d700273f4874893a89d8be040d99be8w.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Ub8f936d879414a889769c19f91e3a8823.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U743ace5439334cb7ae1d1135f2912a84V.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>综合性购物商城，百万种图书超低价，限时秒杀，闪电到货。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

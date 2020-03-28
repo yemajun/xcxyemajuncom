@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H73e8d9d0beec44e883c9b507a5025ff6h.png"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H73e8d9d0beec44e883c9b507a5025ff6h.png"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H91db5335ce3747f5b79310a1d5e580b2p.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H047edbcd78c04eee955b244ba15a5f30p.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H3e542f3e860141a9b506b98bb50d3db2k.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H221857aa8a6c43a1a315ceb0eb38f7c2s.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H91db5335ce3747f5b79310a1d5e580b2p.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H047edbcd78c04eee955b244ba15a5f30p.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H3e542f3e860141a9b506b98bb50d3db2k.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H221857aa8a6c43a1a315ceb0eb38f7c2s.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>平安银行致力于为客户提供全方位的银行服务。您可以直接在小程序上进行投资理财、贷款、存款、银行缴费、申请信用卡、查看账单、本地优惠服务等业务，方便您的财富管理。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

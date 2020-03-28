@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H7799a11126d146bc936e9aa56c4e31e2C.png"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H7799a11126d146bc936e9aa56c4e31e2C.png"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H2e33ffc1290842bc838f666c3a7e7df6u.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H7f61fca9dad44fce8aa4282c2ee0e6cfZ.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Hde7b66f420994a64bb47fb4a55eaa7534.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H2e33ffc1290842bc838f666c3a7e7df6u.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H7f61fca9dad44fce8aa4282c2ee0e6cfZ.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Hde7b66f420994a64bb47fb4a55eaa7534.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>QQ同步助手官方小程序应用。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

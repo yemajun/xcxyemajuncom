@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U73f31cce5981408ab4f6d023102597f33.png"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U73f31cce5981408ab4f6d023102597f33.png"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U17f085ad65ed4f0bac9d69e4bb52c643S.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Uebbc4ffc8c224c25bba67b6c1ac6f4cer.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U68ca6417c66a40df8e611eb2b349245bo.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U46f3df27c91d4cfe8abf38eacd5d1ca35.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U17f085ad65ed4f0bac9d69e4bb52c643S.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Uebbc4ffc8c224c25bba67b6c1ac6f4cer.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U68ca6417c66a40df8e611eb2b349245bo.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U46f3df27c91d4cfe8abf38eacd5d1ca35.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>全球精选生鲜，2小时速达！新鲜果蔬、海鲜肉禽、酒水饮品、进口零食、营养牛奶，我们采取全程冷链+严格品控，只为您新鲜到家！</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Hd0d05b77885e452e99f816e8a4cf22ddz.jpg"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Hd0d05b77885e452e99f816e8a4cf22ddz.jpg"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H230081b1cc4748f5981985dff900c4b5R.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H3d114ba8b26b407b90cd59505d632c5dh.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Haf2943e9da014c7d9bb9a56eaad28148L.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H230081b1cc4748f5981985dff900c4b5R.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H3d114ba8b26b407b90cd59505d632c5dh.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Haf2943e9da014c7d9bb9a56eaad28148L.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>动听的声音有温度。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

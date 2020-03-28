@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/He6935245c5ca4665b532ea11605774fc0.png"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/He6935245c5ca4665b532ea11605774fc0.png"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H24c160be078b4e029c0f016f07969c747.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H983314d9a65e49ffad5aa2fc17740630y.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Hfa66e251fc984192ad2d48c86af4fd32G.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H10ec8fb00a914480ae12e7a7e73fd3b7M.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H24c160be078b4e029c0f016f07969c747.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H983314d9a65e49ffad5aa2fc17740630y.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Hfa66e251fc984192ad2d48c86af4fd32G.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H10ec8fb00a914480ae12e7a7e73fd3b7M.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>迅捷压缩是一款好用的图片压缩工具,可完成常见的JPG、PNG等格式的图片文件压缩,压缩速度快,并且效果好,压缩后的文件质量与原文件几乎保持一致,能够帮助用户更好的处理及保存图片文件.是您工作学习的好帮手。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

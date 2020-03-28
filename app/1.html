@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Hf5c12287192245c0884dfed37f539fe32.png"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Hf5c12287192245c0884dfed37f539fe32.png"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H3b58e7b407324590a1e95214e4c28d7d1.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H8664ef4213ae41aaa4d0384d2090f2c1D.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H7f2616a3f4914687933cd211ede2aad7w.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H3b58e7b407324590a1e95214e4c28d7d1.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H8664ef4213ae41aaa4d0384d2090f2c1D.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H7f2616a3f4914687933cd211ede2aad7w.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>微信支付官方提供的免开发收款工具，支持信用卡收款、官方活动报名，帮助商户更好的经营生意。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

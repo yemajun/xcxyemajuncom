@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Hc8ac8bd50cf74b58b5af085511a76366j.png"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Hc8ac8bd50cf74b58b5af085511a76366j.png"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Hab3e2fa0f2f243c5950ec4979412de60E.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H405ddfe9a10e4333bd1ea5245f32b9a5W.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H31d0d7f897d44999adbd11f2654b7f28t.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Hd6ac77b2450448e8b26f4b5567422553h.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Hab3e2fa0f2f243c5950ec4979412de60E.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H405ddfe9a10e4333bd1ea5245f32b9a5W.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H31d0d7f897d44999adbd11f2654b7f28t.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Hd6ac77b2450448e8b26f4b5567422553h.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>集影片推荐、影片信息查询和深度影评于一体的影片资讯小程序。想知道有哪些新电影资源，想知道有什么好电影，毒舌电影满足您。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H24f882d09c9448e18f625034d4cc0890J.png"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H24f882d09c9448e18f625034d4cc0890J.png"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H91f252d5c8a34f45bc2a48c69035c520m.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H030d91ba46df417ca71426e29d8b4de35.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H674d29dbfeca484fafe9490ab9867e5cO.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H5b7d06d08a014770a39465acf3a82516W.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H91f252d5c8a34f45bc2a48c69035c520m.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H030d91ba46df417ca71426e29d8b4de35.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H674d29dbfeca484fafe9490ab9867e5cO.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H5b7d06d08a014770a39465acf3a82516W.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>京东好借是京东旗下贷款平台。京东好借是由京东金融推出的京东信贷平台下的互联网信贷产品快速申请平台，由银行、消费金融、小额贷款公司等金融机构为用户提供的线上无抵押贷款，有建行、马上金融、招联、中邮等多家资金方，借钱额度高，利率低，放款快。最高可借20万。借1000元，日息低至3毛。多产品多选择，总有一款适合你。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

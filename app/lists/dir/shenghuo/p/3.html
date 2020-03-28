@@ -49,7 +49,7 @@
 			<a class="list" href="/app/24.html" title="街电" target="_blank">
 				<div class="imgLeft">
 					<span>
-						<img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H0f6a94aef54347699f99701622b6d133l.png" style="width: 100%;">
+						<img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H0f6a94aef54347699f99701622b6d133l.png" style="width: 100%;">
 					</span>
 				</div>
 				<div class="dataRight">
@@ -61,7 +61,7 @@
 			</a><a class="list" href="/app/21.html" title="腾讯校园码" target="_blank">
 				<div class="imgLeft">
 					<span>
-						<img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H4f5fe3c0e28f4420ba2a8ae11f3748714.jpg" style="width: 100%;">
+						<img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H4f5fe3c0e28f4420ba2a8ae11f3748714.jpg" style="width: 100%;">
 					</span>
 				</div>
 				<div class="dataRight">
@@ -73,7 +73,7 @@
 			</a><a class="list" href="/app/20.html" title="腾讯家庭守护" target="_blank">
 				<div class="imgLeft">
 					<span>
-						<img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Hcc6e5ca11af44b7e8b97fddc0714c0ab0.jpg" style="width: 100%;">
+						<img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Hcc6e5ca11af44b7e8b97fddc0714c0ab0.jpg" style="width: 100%;">
 					</span>
 				</div>
 				<div class="dataRight">
@@ -98,6 +98,14 @@
 
 
 </div>
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         var $index = 0;

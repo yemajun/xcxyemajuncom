@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Hae9fe31a07084e62887126497d0e0c42O.jpg"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Hae9fe31a07084e62887126497d0e0c42O.jpg"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H9acd5b9cb56b4ec1a3b60e08745adc58w.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H9567abd091a545338b68d0bbc9977dafa.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Ha23fc6b1fefa497e8d3d2bb441d45482W.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H9acd5b9cb56b4ec1a3b60e08745adc58w.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H9567abd091a545338b68d0bbc9977dafa.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Ha23fc6b1fefa497e8d3d2bb441d45482W.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>提供食物的升糖指数查询和营养介绍，帮助评测日常饮食的健康度，并给出有效的食物调整建议。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U3a2ed47700e64702a4033ca8af8c7bb05.png"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U3a2ed47700e64702a4033ca8af8c7bb05.png"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Ud4196e2d93b04c5e821b3469c799434cJ.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U21657b3a3c83424eba0d60772fef74386.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U92c1500012614f0c9fd43963df577862n.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Udb1e846d191e4adb9714d489bb7750577.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Ud4196e2d93b04c5e821b3469c799434cJ.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U21657b3a3c83424eba0d60772fef74386.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U92c1500012614f0c9fd43963df577862n.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Udb1e846d191e4adb9714d489bb7750577.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>连载全本电子书、出版图书在线阅读，提供言情、玄幻、都市、历史、网络文学热门小说免费看。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

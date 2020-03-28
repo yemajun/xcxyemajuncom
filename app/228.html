@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U212ccca79a5c40ea8627c394fb13fe074.png"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U212ccca79a5c40ea8627c394fb13fe074.png"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Ubdee235a369a45219cb156c6784dc6f6A.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U5d39abedf9bb4011906238643bf8963aV.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Ua71cfac328c548c3b704656dfa9cf816H.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U117fe752ba4e4ee49247f3feadc415cdK.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Ubdee235a369a45219cb156c6784dc6f6A.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U5d39abedf9bb4011906238643bf8963aV.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Ua71cfac328c548c3b704656dfa9cf816H.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U117fe752ba4e4ee49247f3feadc415cdK.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>每个人都有兴趣，如果没有，就该培养一个。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

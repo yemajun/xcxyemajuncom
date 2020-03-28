@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H0f6a94aef54347699f99701622b6d133l.png"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H0f6a94aef54347699f99701622b6d133l.png"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H1e81fa48a5164c279ea0036a467c0b218.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H22d7fe7db50945019e31a8a30791faf6u.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H4f991f6f1e7443b8a65942d04ca48d67Q.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H7cdde2c7ae9246bcbdf237fe583062f8C.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H1e81fa48a5164c279ea0036a467c0b218.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H22d7fe7db50945019e31a8a30791faf6u.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H4f991f6f1e7443b8a65942d04ca48d67Q.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H7cdde2c7ae9246bcbdf237fe583062f8C.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>手机没电就找街电，全国无数个充电宝为你免费充电。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

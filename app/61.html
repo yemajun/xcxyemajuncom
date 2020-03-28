@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H73fb29e341f64777916495c4104fe1a5b.png"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H73fb29e341f64777916495c4104fe1a5b.png"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H9bfaf279c6594fa1aa2d937c94a8ab57R.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H76c72d6199894934a1257541b773956bj.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H71fe1d371582436cabc4be730a262669n.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H1098e95c0d5c4c0e896f3e54354708479.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H9bfaf279c6594fa1aa2d937c94a8ab57R.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H76c72d6199894934a1257541b773956bj.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H71fe1d371582436cabc4be730a262669n.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H1098e95c0d5c4c0e896f3e54354708479.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>中国民航信息官方打造的权威民航服务，查航班动态，手机选座，轻松搞定，出行必备。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

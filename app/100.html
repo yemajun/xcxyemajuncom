@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H3f53298771b044beab8522cf96512e7dK.png"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H3f53298771b044beab8522cf96512e7dK.png"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Hb513fb6142934406ae4647757d6092a3b.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H28c09e81bc44461da284fcbfed41bb72r.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H898f944e93b34b6fbd3adc881f1be9dfO.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H6dd3c927626646238fcf0ad8cc76945dK.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Hb513fb6142934406ae4647757d6092a3b.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H28c09e81bc44461da284fcbfed41bb72r.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H898f944e93b34b6fbd3adc881f1be9dfO.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H6dd3c927626646238fcf0ad8cc76945dK.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>58同城为你提供本地生活服务信息，找工作，找房子，找车、买二手买宠物，随时查看即时沟通，都在58同城小程序版。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

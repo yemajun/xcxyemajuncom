@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H124c581d65094d3fb2ed380fdfb18ca2Y.jpg"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H124c581d65094d3fb2ed380fdfb18ca2Y.jpg"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H088ee9cb132541859e452211406d871e8.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/He6035c0ae85741d8a63a508ba910b48dH.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Hb2fb62e870c846f4b6f844248564a382E.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Hdac497b34fae4f5bb57fe503d37454ccm.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H088ee9cb132541859e452211406d871e8.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/He6035c0ae85741d8a63a508ba910b48dH.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Hb2fb62e870c846f4b6f844248564a382E.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Hdac497b34fae4f5bb57fe503d37454ccm.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>安居客坚持以“人人信赖的生活服务平台”为愿景，服务涵盖新房、二手房、租房、商业地产、海外地产、帮助人们实现家的梦想。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

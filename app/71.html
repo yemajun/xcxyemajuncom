@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H815283383107427bb633bb7252d309dcg.png"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H815283383107427bb633bb7252d309dcg.png"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H9963c69a15794d9ea0a0db1133f8b691M.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H50012a1762434d3b9cf4cd0922128986g.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Ha326e94a94494b5495a6d0499fe4b2eas.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H97daf0b18f7e427f8500ed3453be39e58.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H9963c69a15794d9ea0a0db1133f8b691M.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H50012a1762434d3b9cf4cd0922128986g.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Ha326e94a94494b5495a6d0499fe4b2eas.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H97daf0b18f7e427f8500ed3453be39e58.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>石墨任务清单由石墨文档官方出品，是一款可以记录待办事项、工作计划等的效率工具，您可以设置任务时间，任务到期时还可收到石墨文档公众号提醒。任务详情支持关联相关文档，让您在微信内就能掌控任务进度，随时查阅任务相关文件。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

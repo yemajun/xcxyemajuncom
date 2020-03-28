@@ -49,7 +49,7 @@
 			<a class="list" href="/app/195.html" title="腾讯NOW直播" target="_blank">
 				<div class="imgLeft">
 					<span>
-						<img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U152b1b3d07f44de5928a229839cbc232K.jpg" style="width: 100%;">
+						<img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U152b1b3d07f44de5928a229839cbc232K.jpg" style="width: 100%;">
 					</span>
 				</div>
 				<div class="dataRight">
@@ -61,7 +61,7 @@
 			</a><a class="list" href="/app/194.html" title="糖豆视频" target="_blank">
 				<div class="imgLeft">
 					<span>
-						<img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Ub61dda3b123f4d96889862de525da3f7o.jpg" style="width: 100%;">
+						<img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Ub61dda3b123f4d96889862de525da3f7o.jpg" style="width: 100%;">
 					</span>
 				</div>
 				<div class="dataRight">
@@ -73,7 +73,7 @@
 			</a><a class="list" href="/app/171.html" title="一条视频" target="_blank">
 				<div class="imgLeft">
 					<span>
-						<img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Ub3b15d70f2cd40499d978c111311c134Y.jpg" style="width: 100%;">
+						<img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Ub3b15d70f2cd40499d978c111311c134Y.jpg" style="width: 100%;">
 					</span>
 				</div>
 				<div class="dataRight">
@@ -85,7 +85,7 @@
 			</a><a class="list" href="/app/80.html" title="微信直播" target="_blank">
 				<div class="imgLeft">
 					<span>
-						<img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H89d52f3a7ad544d5b72ddf55a9dc636cP.png" style="width: 100%;">
+						<img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H89d52f3a7ad544d5b72ddf55a9dc636cP.png" style="width: 100%;">
 					</span>
 				</div>
 				<div class="dataRight">
@@ -97,7 +97,7 @@
 			</a><a class="list" href="/app/77.html" title="网易声音图书馆" target="_blank">
 				<div class="imgLeft">
 					<span>
-						<img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Hd0d05b77885e452e99f816e8a4cf22ddz.jpg" style="width: 100%;">
+						<img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Hd0d05b77885e452e99f816e8a4cf22ddz.jpg" style="width: 100%;">
 					</span>
 				</div>
 				<div class="dataRight">
@@ -109,7 +109,7 @@
 			</a><a class="list" href="/app/54.html" title="小影" target="_blank">
 				<div class="imgLeft">
 					<span>
-						<img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H313ca13817764a43a1b61097374d679fb.png" style="width: 100%;">
+						<img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H313ca13817764a43a1b61097374d679fb.png" style="width: 100%;">
 					</span>
 				</div>
 				<div class="dataRight">
@@ -134,6 +134,14 @@
 
 
 </div>
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         var $index = 0;

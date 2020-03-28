@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U5eeb23dc70214f498c42403834f2e6264.jpg"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U5eeb23dc70214f498c42403834f2e6264.jpg"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U62e12eab1e8b4c3c85a5ad851e94299bh.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Ud7753be45d3e4a3f87aed01e851e9e57a.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Ucb5058425fab4cd3b960881a5559285a1.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U62e12eab1e8b4c3c85a5ad851e94299bh.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Ud7753be45d3e4a3f87aed01e851e9e57a.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Ucb5058425fab4cd3b960881a5559285a1.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>欢迎您关注铁路12306的小程序服务平台，我们竭诚为您提供铁路客运输信息服务。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

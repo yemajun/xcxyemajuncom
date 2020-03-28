@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H24588b48ad51405aa77aa4d512b81e039.png"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H24588b48ad51405aa77aa4d512b81e039.png"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H556093aee01f44e19b68c4f660f4babcP.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H4d2b2fe62e9e4f4eaf2bfd7177b545ddu.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H1a87af9b8a704f7eadba8a0f0aecf049R.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Hfc5811f5054542e19c4ad7e734f7127dt.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H556093aee01f44e19b68c4f660f4babcP.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H4d2b2fe62e9e4f4eaf2bfd7177b545ddu.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H1a87af9b8a704f7eadba8a0f0aecf049R.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Hfc5811f5054542e19c4ad7e734f7127dt.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>企鹅医典致力于向广大网络提供权威可信的医学知识，并提供易于理解的科普解读。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U27bc3e6a77c1457ba1f460a728056035O.jpg"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U27bc3e6a77c1457ba1f460a728056035O.jpg"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Ud953cf026b2943d6808fc19ba489d436D.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Ud88b205c3ca9485f95358c904f8380a8u.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U54312d49effb4a79b0a52902d9d03a25y.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U0577de508c294477988d796e7b2633e14.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Ud953cf026b2943d6808fc19ba489d436D.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Ud88b205c3ca9485f95358c904f8380a8u.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U54312d49effb4a79b0a52902d9d03a25y.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U0577de508c294477988d796e7b2633e14.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>全国热门餐厅，手机取号，在线排队。精确预估等位时间，实时查看排队进度，到号提醒。不等位的吃货神器，美味不用等！</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

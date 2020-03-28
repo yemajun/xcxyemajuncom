@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Hc7fd42ea183c422ca8732499900d6238O.png"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Hc7fd42ea183c422ca8732499900d6238O.png"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H1607da9eac574c51928e2fb58a55fb3fD.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Hf0f71e69d208450d9609a9d275489805V.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H6fa609facdfb4ee8a83f6e4775aeb0bcQ.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Hcbd7b9247e9543628e98cfd8ddc574b6w.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H1607da9eac574c51928e2fb58a55fb3fD.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Hf0f71e69d208450d9609a9d275489805V.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H6fa609facdfb4ee8a83f6e4775aeb0bcQ.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Hcbd7b9247e9543628e98cfd8ddc574b6w.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>丁香园官方出品的权威药物查询小助手</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

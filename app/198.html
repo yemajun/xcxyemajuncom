@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Uf9737626807b4d5db4615f8de4727ebcR.jpg"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Uf9737626807b4d5db4615f8de4727ebcR.jpg"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U5e39376961ad404889997cfb891c735fQ.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Ue30476f6830c429ba769e5752cf867edk.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U9e1d1f5847d24975b4f83be3a4bad141v.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U5e39376961ad404889997cfb891c735fQ.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Ue30476f6830c429ba769e5752cf867edk.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U9e1d1f5847d24975b4f83be3a4bad141v.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>微视，聚焦95后的短视频社区，才艺、美女、搞笑、嘻哈等潮流酷炫视频应有尽有。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

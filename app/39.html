@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H1a4703bf33384353ab22ddc4298bde59J.png"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H1a4703bf33384353ab22ddc4298bde59J.png"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Hdb80d5bc97c848d5a69d281b195ad862v.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Hcb1bb27d94234e8fa5afec602a092827Y.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Hf231087711d64051a407f952f5ccad20q.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H4502b2a818704060a41c2c24971e581aQ.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Hdb80d5bc97c848d5a69d281b195ad862v.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Hcb1bb27d94234e8fa5afec602a092827Y.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Hf231087711d64051a407f952f5ccad20q.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H4502b2a818704060a41c2c24971e581aQ.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>掌上便利购买保险，由蚂蚁金服、腾讯、中国平安等企业发起成立，国内首家互联网保险金融机构。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

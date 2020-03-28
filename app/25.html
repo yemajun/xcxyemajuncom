@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Ha1fff8ac9647437fa137d49bdd0c09e9Q.png"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Ha1fff8ac9647437fa137d49bdd0c09e9Q.png"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Ha75ae9e7e20f4de8b6a9a00d29801a81O.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H0dda1386f59e45c18e3205c21d3686d1o.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Hc594984ba63b49cd8506aecbd62c279be.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Ha75ae9e7e20f4de8b6a9a00d29801a81O.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H0dda1386f59e45c18e3205c21d3686d1o.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Hc594984ba63b49cd8506aecbd62c279be.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>爱回收手机回收是爱回收旗下产品，提供手机智能验机服务，快速评估手机价值，推荐最近爱回收门店，让所有弃之不用都物尽其用。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

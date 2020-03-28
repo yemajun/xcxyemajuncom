@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U2d5b9b6252ea4583a17c57242adf805az.png"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U2d5b9b6252ea4583a17c57242adf805az.png"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U23d7c622c1924410b9e9fe295a1088c7G.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Ue7646ecc50e54268869fc86b9a11b6015.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U9ae329bd0bb94e1eb4b095677ff1afeeo.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U23d7c622c1924410b9e9fe295a1088c7G.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Ue7646ecc50e54268869fc86b9a11b6015.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U9ae329bd0bb94e1eb4b095677ff1afeeo.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>让普通跳绳也能自动计数，并有语音报数，跳绳速度记录分析功能的微信小程序。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

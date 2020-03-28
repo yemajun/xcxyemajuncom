@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H857dd2d44e174a7a894bac95374736aeB.jpg"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H857dd2d44e174a7a894bac95374736aeB.jpg"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H2087582094bb4ecca0b201063f3ada5aW.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Hf3809f6248834f6cb12bd2047e259838l.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H4bc8add21f474572a888f58051e1f6b2A.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H79cc9bc5f88f489f8f008ac0300d8751K.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H2087582094bb4ecca0b201063f3ada5aW.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Hf3809f6248834f6cb12bd2047e259838l.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H4bc8add21f474572a888f58051e1f6b2A.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H79cc9bc5f88f489f8f008ac0300d8751K.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>专业的房产服务平台，提供二手房，租房，新房，查房价等服务。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

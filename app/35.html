@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H155f516d78644332b5fc246bd980513df.png"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H155f516d78644332b5fc246bd980513df.png"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H0d19a2bb86b34c02815cf1d62703f111j.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Hc2c2b603acf642cdab296c811345ac83s.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/He06e519d1330473ebd262a5b3f0e1b223.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H0eabfc3ba2a94067a6c68e2002eaa54fe.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H415afbd5253f4d9ba022f878881708201.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H0d19a2bb86b34c02815cf1d62703f111j.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Hc2c2b603acf642cdab296c811345ac83s.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/He06e519d1330473ebd262a5b3f0e1b223.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H0eabfc3ba2a94067a6c68e2002eaa54fe.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H415afbd5253f4d9ba022f878881708201.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>腾讯官方出品股票证券小程序，涵盖沪深A股、港股、美股全市场实时行情，为你提供专业看盘炒股服务。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

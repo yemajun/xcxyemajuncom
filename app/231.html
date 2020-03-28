@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U19ab61f538794e46a9ea4f38b6826f97d.png"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U19ab61f538794e46a9ea4f38b6826f97d.png"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U61a5452cb6294f1fa489eda3d0ff6e13f.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Ud1d297b86b60436d87e978f4a40f5c2fP.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U531ca9ca28204416b98b7ed05400bc47q.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Uc0c950727bd84afabb9a003e5dec6ff38.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U61a5452cb6294f1fa489eda3d0ff6e13f.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Ud1d297b86b60436d87e978f4a40f5c2fP.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U531ca9ca28204416b98b7ed05400bc47q.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Uc0c950727bd84afabb9a003e5dec6ff38.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>广播电台，有声小说，相声小品，新闻，音乐，脱口秀，历史，军事就用蜻蜓FM。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

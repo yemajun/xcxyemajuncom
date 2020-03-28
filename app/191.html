@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U44b505ea63c54b6da60703b0276dedbd1.jpg"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U44b505ea63c54b6da60703b0276dedbd1.jpg"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U6a40284c755a478bac44ba7069e8883f4.jpg"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Ub91ee64a6c364ea681d9ac0e446c9a26j.jpg"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Ucd863d8df98f400991ef1ca6edc96df2E.jpg"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Ua040327a396f49d7a49405085ebdd03aW.jpg"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U6a40284c755a478bac44ba7069e8883f4.jpg"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Ub91ee64a6c364ea681d9ac0e446c9a26j.jpg"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Ucd863d8df98f400991ef1ca6edc96df2E.jpg"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Ua040327a396f49d7a49405085ebdd03aW.jpg"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>携程旅行网小程序，提供酒店、机票、火车票、汽车票、门票预订服务。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

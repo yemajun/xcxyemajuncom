@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Uc15042ef01d644cb87914024b33bf087Z.png"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Uc15042ef01d644cb87914024b33bf087Z.png"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U9bf591d72c53420492eed062d27d5118E.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Uc09f8a10b7744120b0ceee3b50f94ad1Z.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U23561c8c2c324c5485085aca245dec65t.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U0e1f480addec4d89af2cac323db4d898y.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U9bf591d72c53420492eed062d27d5118E.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Uc09f8a10b7744120b0ceee3b50f94ad1Z.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U23561c8c2c324c5485085aca245dec65t.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U0e1f480addec4d89af2cac323db4d898y.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>斗鱼直播平台。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

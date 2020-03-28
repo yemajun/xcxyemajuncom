@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H41a6b02823a44270a6978f6218747d53n.png"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H41a6b02823a44270a6978f6218747d53n.png"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U6fb6628c853e4f388a5b4649de97173cc.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U295698798d89400683369ae146dca066k.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Uce5a9d419eb940e7864a3541c5530a21M.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U45353cae39064d25ba90d05dec085a9aj.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U6fb6628c853e4f388a5b4649de97173cc.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U295698798d89400683369ae146dca066k.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Uce5a9d419eb940e7864a3541c5530a21M.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U45353cae39064d25ba90d05dec085a9aj.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>全场1折特卖，9.9元起全场包邮。每天10点准时更新开抢！让购物更省钱，让您花的更少，过得更好！</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

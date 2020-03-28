@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Hc25c7deb2ed34b6d90a93f819cbd45bdb.png"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Hc25c7deb2ed34b6d90a93f819cbd45bdb.png"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/He4e1b91ef12e4a4ba061f1f4eefd3d63E.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H962bcf01753f426eb04a5677f2a4750fs.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Hf2d92e1e7fd14416903e6b80adf28d72H.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H06aa4c4f43c7488f8fd99e0eec5dff57O.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H84b62a335f57454c9be6d4ba18c075cfH.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/He4e1b91ef12e4a4ba061f1f4eefd3d63E.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H962bcf01753f426eb04a5677f2a4750fs.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Hf2d92e1e7fd14416903e6b80adf28d72H.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H06aa4c4f43c7488f8fd99e0eec5dff57O.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H84b62a335f57454c9be6d4ba18c075cfH.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>天天基金凭借其专业、及时、全面、权威的财经平台优势，为广大投资者提供一站式金融理财服务。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

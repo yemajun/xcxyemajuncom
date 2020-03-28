@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U0d3a491a486a455d9df685a54b3fd8c8p.jpg"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U0d3a491a486a455d9df685a54b3fd8c8p.jpg"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Uaf0a83ff584c4688b0669cff0b4b5eaf1.jpg"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Uf6838730cfd7475ea2c38442b17d4176H.jpg"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Uefcc91a79ae54fbc9b53b45b40d4ba8eI.jpg"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Ud185f55e4b7340539d37c2df89118f929.jpg"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U51e054f28b8b445397e665dd6a2ab300M.jpg"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Uaf0a83ff584c4688b0669cff0b4b5eaf1.jpg"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Uf6838730cfd7475ea2c38442b17d4176H.jpg"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Uefcc91a79ae54fbc9b53b45b40d4ba8eI.jpg"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Ud185f55e4b7340539d37c2df89118f929.jpg"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U51e054f28b8b445397e665dd6a2ab300M.jpg"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>网易新闻精选，给你最热的新闻和最深刻的独家解读。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

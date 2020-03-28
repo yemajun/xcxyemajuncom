@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Uadc511f663ec4c869851dadd93c14356y.jpg"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Uadc511f663ec4c869851dadd93c14356y.jpg"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U01e3057863a048acae5043a1c2f61576M.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Uaebc2566fc544d3bac02993ed8d73077j.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U596097ba0ef4406792f6d5bf41ba10e1n.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U01e3057863a048acae5043a1c2f61576M.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Uaebc2566fc544d3bac02993ed8d73077j.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U596097ba0ef4406792f6d5bf41ba10e1n.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>搜狐视频网络最新最热短视频内容，简单快捷，无需下载关注。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Hcc6e5ca11af44b7e8b97fddc0714c0ab0.jpg"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Hcc6e5ca11af44b7e8b97fddc0714c0ab0.jpg"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H93aa0566d8ed42aa8dec0e5598f25b174.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Hd057b1b8d1b8498886bca32b80ad49c0g.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H4dffb257d472495fb5403e7d1d9322576.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H93aa0566d8ed42aa8dec0e5598f25b174.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Hd057b1b8d1b8498886bca32b80ad49c0g.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H4dffb257d472495fb5403e7d1d9322576.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>查询和管理孩子游戏时间及消费，帮助孩子养成健康娱乐习惯。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

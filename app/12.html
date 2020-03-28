@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H553a0d46ee7b4f3db33b950b927e5989s.png"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H553a0d46ee7b4f3db33b950b927e5989s.png"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H5b8fda0fc2aa4b72a224856757266247q.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Hcac3967e225b4a4cac0b4c5c2ae7fe12R.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H563020dfdce546fe877998563d3eea3bz.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H674807077db34d8cb4a3e3a03590d068Y.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H5b8fda0fc2aa4b72a224856757266247q.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Hcac3967e225b4a4cac0b4c5c2ae7fe12R.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H563020dfdce546fe877998563d3eea3bz.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H674807077db34d8cb4a3e3a03590d068Y.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>互动吧最大活动平台官方小程序，海量精彩活动覆盖全国，提供亲子幼教、运动健身、旅行户外 、派对娱乐、商务会议、职业培训等多种活动选择，打开更轻便，美好生活一触即发。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

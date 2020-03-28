@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U057a1a97f48b42618ac8407944ca8bd10.png"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U057a1a97f48b42618ac8407944ca8bd10.png"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U5a8e4e6d71b54eb98de05101b84915106.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U603d9d4ea86f431f84478152afd4d181S.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U99b8d84455194392a1ddf0dfde438d6bV.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U5a8e4e6d71b54eb98de05101b84915106.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U603d9d4ea86f431f84478152afd4d181S.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U99b8d84455194392a1ddf0dfde438d6bV.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>嗨翻宇宙的神级脑洞社区。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

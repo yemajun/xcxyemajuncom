@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Ue4581a832ed0494baf4664e373307cdfC.jpg"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Ue4581a832ed0494baf4664e373307cdfC.jpg"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Ubbc8188699de4a17990537760afe336di.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U0e392b19a6a94919b7e184d0cda4ebd9k.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U9f69bccee5f343a2ba7b71615d50ebc1r.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U9d198d7af9894cc4a329bd1d2b724e0f9.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Ua10f0546521941468a0e359e9501e4ffH.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Ubbc8188699de4a17990537760afe336di.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U0e392b19a6a94919b7e184d0cda4ebd9k.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U9f69bccee5f343a2ba7b71615d50ebc1r.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U9d198d7af9894cc4a329bd1d2b724e0f9.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Ua10f0546521941468a0e359e9501e4ffH.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>丁香园旗下专业医药生物求职招聘平台为生、护士/护理、医药、口腔等科室求职找工作提供真实岗位，是医护群体找工作的得力助手。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Ud4f244981a064a3480f2f0508dd59065J.png"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Ud4f244981a064a3480f2f0508dd59065J.png"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Ua163f3bad0d4483a874089460406e34bP.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U5002273ac7124bc0824c8c582c5c3fe5q.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Ub485429fe7534fe68c1dfba2724e878at.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Ua163f3bad0d4483a874089460406e34bP.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U5002273ac7124bc0824c8c582c5c3fe5q.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Ub485429fe7534fe68c1dfba2724e878at.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>科技新闻，每天 3 分钟。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

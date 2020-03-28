@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U7251fc506e794546a0291c277c135706N.jpg"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U7251fc506e794546a0291c277c135706N.jpg"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U313c9478e69b4d8cb3f4957475a32177B.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U21f0ced9f7364ee889a9c7609a529498a.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Ue448f27b4e624f9994b271e1982a9adaP.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Uce05dbaca3004682b627d8a8fc6caa59m.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U313c9478e69b4d8cb3f4957475a32177B.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U21f0ced9f7364ee889a9c7609a529498a.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Ue448f27b4e624f9994b271e1982a9adaP.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Uce05dbaca3004682b627d8a8fc6caa59m.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>新氧，众多用户在用的美容微整形专业APP。整容医美百科，真人真实的变美日记，玻尿酸、瘦脸针、水光针、双眼皮、眼袋、线雕、抗衰老、脱毛、半永久、洗牙、瘦身等明星项目特卖，帮你解决美白、祛痘、补水、毛孔等皮肤管理问题，让你更美！</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U312ad54bdf4443628a442683a3f8a0351.jpg"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U312ad54bdf4443628a442683a3f8a0351.jpg"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Uffdd90c96d5049f4bcbec30b993f258aO.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Uc7f846fd48fe4ae09dc22b330d553c4eU.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U1960244a4b084b5485ca4c9e7a28489ae.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U421d6c6b6dab4e1481df4289e5495642R.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Uffdd90c96d5049f4bcbec30b993f258aO.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Uc7f846fd48fe4ae09dc22b330d553c4eU.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U1960244a4b084b5485ca4c9e7a28489ae.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U421d6c6b6dab4e1481df4289e5495642R.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>腾讯动漫女生版，随时随地轻松阅读的漫画神器，每天都有一大波超高清的好漫更新，萌妹暖男都在这里呦。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

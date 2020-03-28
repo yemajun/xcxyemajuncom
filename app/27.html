@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Ha7ca3fecaf1649b4a715ff20a7c81348B.png"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Ha7ca3fecaf1649b4a715ff20a7c81348B.png"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/He03f3bd5d91749ea8e2ccf94ae548099I.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H92a8c5a00eb84ae985b7e7707eff63ff4.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H6059fa322a63459db4d29bb4fba5010cO.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Hf13a1a6d90e9454981aa1eea7b45a3fdr.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/He03f3bd5d91749ea8e2ccf94ae548099I.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H92a8c5a00eb84ae985b7e7707eff63ff4.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H6059fa322a63459db4d29bb4fba5010cO.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Hf13a1a6d90e9454981aa1eea7b45a3fdr.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>“名片全能王+”是“名片全能王app”旗下的电子名片工具类小程序，除了电子名片的基本功能外，还新增了自动生成企业信息，且“名片全能王app”用户也可以同步app内名片夹。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

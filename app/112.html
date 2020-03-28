@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H820ea8552eab473d8d917dcc00e7e1204.png"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H820ea8552eab473d8d917dcc00e7e1204.png"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H35fff990373d421599b1ef8be08c1d45B.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H474c7184ab2847c3997259982880afc3L.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H119e3b89cbb24a08b67b0bcc5fdf28acG.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/He65519bf126e45d285eff59e13dbd3ad1.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H35fff990373d421599b1ef8be08c1d45B.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H474c7184ab2847c3997259982880afc3L.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H119e3b89cbb24a08b67b0bcc5fdf28acG.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/He65519bf126e45d285eff59e13dbd3ad1.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>启信宝是一款快速精准的企业信息查询工具，为各界人士提供丰富详尽的企业信息检索，尤其能帮助金融从业者、律师、投资人、媒体记者、销售与管理等专业、商务人士提供全面、客观、权威的工商、投资、司法拍卖、资质、许可、处罚等企业信息，是各界商务人士必备的企业征信利器。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

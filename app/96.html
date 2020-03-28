@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H42c2b735ae1244adbea237fac404c47bc.png"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H42c2b735ae1244adbea237fac404c47bc.png"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H66351e43ea5740d286c59df5c2d70e34t.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H0afb54d998a04a22850f204525a1e32bb.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Hf24b95ecce664bf193d9a6aedc153eb58.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Hf0e1a210a55f447387f125b8745011dap.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H66351e43ea5740d286c59df5c2d70e34t.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H0afb54d998a04a22850f204525a1e32bb.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Hf24b95ecce664bf193d9a6aedc153eb58.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Hf0e1a210a55f447387f125b8745011dap.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>图片美化、创意拼图、动感影集、私人相册、抠图合成、AI修图、动漫化身，图片处理无所不能。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

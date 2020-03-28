@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H86eca28cb4934e18918a1772ed8b00abh.jpg"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H86eca28cb4934e18918a1772ed8b00abh.jpg"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U8ffb160ffeb64a35bf99b04a23d5e6b6M.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Uf58d3fd6b40c421998f92a4144211829v.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Uf6a4a564b6fe4a8cb7c4764d76bda715D.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U8ffb160ffeb64a35bf99b04a23d5e6b6M.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Uf58d3fd6b40c421998f92a4144211829v.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Uf6a4a564b6fe4a8cb7c4764d76bda715D.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>定义运动潮流文化的标尺。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

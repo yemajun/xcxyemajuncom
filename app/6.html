@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H8411453af9be477cac34d63049b31af1I.png"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H8411453af9be477cac34d63049b31af1I.png"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H02e5dc1f790a4cb0b6117062d1fafd39B.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H21f1f4bad8494cabb0f3f67c8284ca32q.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H17cad44c296a4587b9fd0a6b7bdde06ay.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H004f6d53fa0d4c419a5c7b5c55035c2a0.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H02e5dc1f790a4cb0b6117062d1fafd39B.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H21f1f4bad8494cabb0f3f67c8284ca32q.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H17cad44c296a4587b9fd0a6b7bdde06ay.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H004f6d53fa0d4c419a5c7b5c55035c2a0.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>王者荣耀小程序，是服务于广大玩家的游戏服务平台，为玩家提供游戏战绩、好友动态、最新官方资讯、精品攻略、活动礼包和精彩直播视频等优质内容。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

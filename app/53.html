@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H5bbc22534e5543568f178fbc503a87cey.jpg"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H5bbc22534e5543568f178fbc503a87cey.jpg"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H6e6b7b871e004067817997f07463b360M.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H0f559e4ebbd049fb8a9f31a0fbe7a620w.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H1868956bde5b4b6a91bea3a94d995294L.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H582f0d86c52d443db122bf3e62e7284fv.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H6e6b7b871e004067817997f07463b360M.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H0f559e4ebbd049fb8a9f31a0fbe7a620w.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H1868956bde5b4b6a91bea3a94d995294L.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H582f0d86c52d443db122bf3e62e7284fv.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>京东步数换，可将步数兑换成礼品，让你的步数不再浪费！步数可通过邀请好友、门店打卡获取，快邀请好友一起参与吧！</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

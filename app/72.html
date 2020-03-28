@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H3103689fdb7d40f4bbcfa13a971be256Z.png"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H3103689fdb7d40f4bbcfa13a971be256Z.png"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/He896a1f001844b26b7a80546be8f7364S.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Hbf97299163a844ef8f2c0925f59b69dcO.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H5806b61f3c154225953450ac710653b68.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Hf97b83744660444084c39c9a1794e34cs.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/He896a1f001844b26b7a80546be8f7364S.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Hbf97299163a844ef8f2c0925f59b69dcO.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H5806b61f3c154225953450ac710653b68.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Hf97b83744660444084c39c9a1794e34cs.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>易企秀H5小程序可在线快速制作H5，拥有海量创意模板及正版素材，实时查看传播数据，管理客户表单信息，随时做，即时传。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

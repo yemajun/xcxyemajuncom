@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Heffd072f63944ceeaee9ab481470cba0H.jpg"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Heffd072f63944ceeaee9ab481470cba0H.jpg"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H8ddf5c3f55c64ccd92798e8e2600ee578.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Ha6c1d771d27d4434b8c5761764c1a8a1o.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/He7c2cb14d59a4e5eaad1037bf58db7ba1.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Hbdeaf0cd40944ac797a3db4aff64e2e4T.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H8ddf5c3f55c64ccd92798e8e2600ee578.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Ha6c1d771d27d4434b8c5761764c1a8a1o.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/He7c2cb14d59a4e5eaad1037bf58db7ba1.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Hbdeaf0cd40944ac797a3db4aff64e2e4T.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>凡科快图，是免费的在线图片设计工具。数十款正版字体免费商用。3步在线处理图片,不用ps,会打字就能1分钟在线制作图片。利用丰富的模板你可快速完成手机海报、公众号图片、邀请函、名片、印刷海报等创意场景的设计制作。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

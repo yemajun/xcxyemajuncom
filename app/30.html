@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H0d94bad67e994ceebdae354d40d1b307w.png"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H0d94bad67e994ceebdae354d40d1b307w.png"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H4171b0c9bbf74fa7906ba152e7daec63q.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Ha32ead48ed19476a927751e66cc3f880s.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H32f66e166fee4a0f9e75e73669543eb90.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H4171b0c9bbf74fa7906ba152e7daec63q.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Ha32ead48ed19476a927751e66cc3f880s.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H32f66e166fee4a0f9e75e73669543eb90.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>腾讯手机管家的亿万号码库建议帮你鉴定诈骗电话、黄页号码等。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

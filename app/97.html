@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H21da38ea626140ccb74a47a1aeb3e793C.png"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H21da38ea626140ccb74a47a1aeb3e793C.png"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H4011c614c01d470087023ae39f5684d9e.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/He90333eb4ce04ec28e53b0d76128ee415.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H6525076afe3a47e3ba1d74b5206d4f23k.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H4062b26f138448908870e642aca0c0ddt.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H969722406dc24f6fbee5e3e5e90aa053I.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H4011c614c01d470087023ae39f5684d9e.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/He90333eb4ce04ec28e53b0d76128ee415.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H6525076afe3a47e3ba1d74b5206d4f23k.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H4062b26f138448908870e642aca0c0ddt.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H969722406dc24f6fbee5e3e5e90aa053I.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>随手记，20年财务沉淀。用心做记账，2.2亿用户信赖。记账理财第一步！多场景多账本随时记录，3秒记一笔，助您多赚少花每一天。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

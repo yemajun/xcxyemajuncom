@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Hf9e0f1f604af4918ad1b6b97aa2737eaL.jpeg"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Hf9e0f1f604af4918ad1b6b97aa2737eaL.jpeg"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H0168f96ed89944cb9418ad868c5a7e39j.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H8e860de02d6040fd8d7c4d5d5b1ac65et.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/He498030ff4174529b3e39dd719e07f4b0.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H1ca89a7c77f7442b996bc12f48b922bfv.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H0168f96ed89944cb9418ad868c5a7e39j.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H8e860de02d6040fd8d7c4d5d5b1ac65et.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/He498030ff4174529b3e39dd719e07f4b0.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H1ca89a7c77f7442b996bc12f48b922bfv.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>印象笔记微清单帮你随时随地创建各种小清单。从购物、美食、旅行到工作学习，微清单都能助你一臂之力。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

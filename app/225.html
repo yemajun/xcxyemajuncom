@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U1a3acfe5a73c47ffa6c660e169041d38E.png"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U1a3acfe5a73c47ffa6c660e169041d38E.png"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U17b6f4c480b84d50a47d0a0030769455e.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U1ffb0553c96b4c289784076734298594h.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U17327faac7ff4942a3cfa7e11f2b0721R.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Ud09fab5fdb5e438da427caecd4a80299A.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U17b6f4c480b84d50a47d0a0030769455e.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U1ffb0553c96b4c289784076734298594h.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U17327faac7ff4942a3cfa7e11f2b0721R.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Ud09fab5fdb5e438da427caecd4a80299A.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>天翼阅读公司旗下一款以音频内容为载体的数字阅读应用，高保真音质内容和优质贴心的产品服务，全方位满足您的收听需求。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

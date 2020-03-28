@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H6f7d6fe4f41f4c9199959a092de9b546T.png"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H6f7d6fe4f41f4c9199959a092de9b546T.png"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H8300e51a5ac14fe49985148586cd10d07.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H340f3c6815e4477a8ffdff89ec0ec2e75.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Hc6f9a75d0d124d1ca43027f02aee78deo.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H46b4418c857d404b95453833423a28fev.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H8300e51a5ac14fe49985148586cd10d07.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H340f3c6815e4477a8ffdff89ec0ec2e75.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Hc6f9a75d0d124d1ca43027f02aee78deo.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H46b4418c857d404b95453833423a28fev.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>微黄金是财付通与工商银行合作，以工商银行黄金积存产品为基础，结合互联网用户需求，联合推出的实物黄金服务。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

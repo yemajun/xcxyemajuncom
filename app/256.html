@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H08fb5081798a40a98340b0824baab567M.png"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H08fb5081798a40a98340b0824baab567M.png"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Uea10824b78fb4c30aab7f1bceaa70158l.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U18e4d82c1c1a46c48437438c47d5eb2bq.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Uae6326de856d464e955c87271d784ff4d.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Ub5f13b3dfbb649218573a9d6b3141015B.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Uea10824b78fb4c30aab7f1bceaa70158l.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U18e4d82c1c1a46c48437438c47d5eb2bq.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Uae6326de856d464e955c87271d784ff4d.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Ub5f13b3dfbb649218573a9d6b3141015B.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>汽车成交价查询，十年汽车互联网大咖团队，全面提供有趣、有态度的选车玩车内容。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

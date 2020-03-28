@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Hb5a46a6dd7ba4996b5ad5649a0e7791bF.jpg"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Hb5a46a6dd7ba4996b5ad5649a0e7791bF.jpg"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H790dc73b295f4eaeb007e6b4c5242ffct.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/He1ce7c836af845c79ebfd8b26161ae050.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H56265156748f4d5d9eaf0e56aa4ee90a8.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H9409b0b5d4824f46a130d308e620ece4x.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H790dc73b295f4eaeb007e6b4c5242ffct.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/He1ce7c836af845c79ebfd8b26161ae050.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H56265156748f4d5d9eaf0e56aa4ee90a8.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H9409b0b5d4824f46a130d308e620ece4x.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>华为商城是华为公司旗下自营电子商务平台，保证正品，服务可靠。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

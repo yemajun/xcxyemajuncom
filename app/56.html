@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H1ee09fc3caa0447888ff81b8e616626da.png"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H1ee09fc3caa0447888ff81b8e616626da.png"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H3fe0680ca636450bb84d07fef213ca42R.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H5e27f3c7b98e4ede8666de15195a4cb8l.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H03481c038b3640f9b743c62553f5081ag.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H61550f6c8b96487ca8a3bf669d5a81975.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H3fe0680ca636450bb84d07fef213ca42R.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H5e27f3c7b98e4ede8666de15195a4cb8l.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H03481c038b3640f9b743c62553f5081ag.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H61550f6c8b96487ca8a3bf669d5a81975.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>国民小冥想，小睡眠团队专业出品。小冥想糅合东西方最前沿冥想技巧和研究成果，加入治疗音乐的基础上大胆进行本土化革新，开发出最适合中国人练习的冥想课程。长期练习，帮助改善睡眠、缓解焦虑、恢复精力和调整心态。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

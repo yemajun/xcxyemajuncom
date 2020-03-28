@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Ucb2bc436004e4ad5b8f392eb3aef026fx.jpg"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Ucb2bc436004e4ad5b8f392eb3aef026fx.jpg"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Uc31dac5c80f54c4e82f55bf696f73aa3U.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U677efaf22dbe47fe8598203b379e3e6fp.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U80be93c3dc6c48eaa6148277beae231bZ.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U7afd1b23d16f4d6ea46f80c82a004ce3t.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U83e6dcb6e53a40f29dea3e3bb11e3eebE.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Uc31dac5c80f54c4e82f55bf696f73aa3U.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U677efaf22dbe47fe8598203b379e3e6fp.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U80be93c3dc6c48eaa6148277beae231bZ.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U7afd1b23d16f4d6ea46f80c82a004ce3t.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U83e6dcb6e53a40f29dea3e3bb11e3eebE.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>开眼视频Eyepetizer小程序。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

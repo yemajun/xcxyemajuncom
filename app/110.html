@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H44eeb62ca4924fde8685c951d40f05d3b.jpg"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H44eeb62ca4924fde8685c951d40f05d3b.jpg"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Hedea8588b4034930b1774ffced4e80a1U.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H52b5639dcd4e4201ab56899c8e718ce6B.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H55dc0e86d5a5423c9b3eeb08c86d8d2b6.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H4804ff19511146a89d3616b3e06d435cD.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Ha1a78b49322b400d8603027fffb93830V.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Hedea8588b4034930b1774ffced4e80a1U.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H52b5639dcd4e4201ab56899c8e718ce6B.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H55dc0e86d5a5423c9b3eeb08c86d8d2b6.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H4804ff19511146a89d3616b3e06d435cD.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Ha1a78b49322b400d8603027fffb93830V.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>TapTap是一个高品质玩家社区，在这里可以获得游戏分享/体验  找到属于自己 好玩的游戏。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

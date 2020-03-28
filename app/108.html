@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H221ce8c531b548ea8c5a6b64ba278f80e.png"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H221ce8c531b548ea8c5a6b64ba278f80e.png"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Hb3eaae450679442fb0577b19e91cf545z.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H4a461dbd047a4bb797ed155236a1822ag.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H2a94714478cd47b58419161ea2785851M.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H46407b6850ab4d0bbed31c90cfc105ffw.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H31071d357fda4da3805547b33a825c44C.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Hb3eaae450679442fb0577b19e91cf545z.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H4a461dbd047a4bb797ed155236a1822ag.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H2a94714478cd47b58419161ea2785851M.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H46407b6850ab4d0bbed31c90cfc105ffw.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H31071d357fda4da3805547b33a825c44C.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>一个扩列交友的社交类小程序。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U57e97048dbec4375b3106f276b8df607D.jpg"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U57e97048dbec4375b3106f276b8df607D.jpg"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U984728afdff44a0caf1bdf1edf71d966V.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U1468fc6ee89a46d0a5c88a16312452bfV.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U51ea557061844752ac0b3ac40066b03aq.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U984728afdff44a0caf1bdf1edf71d966V.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U1468fc6ee89a46d0a5c88a16312452bfV.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U51ea557061844752ac0b3ac40066b03aq.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>星巴克用星说小程序，提供全新社交礼品体验。选份星巴克好礼，用心定制专属的咖啡心意，即刻想在乎的人传递祝福，连接彼此。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

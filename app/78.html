@@ -53,13 +53,13 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Hac2f654be5f942c0995244f63740aafeI.png"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Hac2f654be5f942c0995244f63740aafeI.png"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
 						<h3 class="fl">腾讯乘车卡</h3>
 					</div>
-					<p>分类：<label><a href="/app/lists/dir/lvyouchuxing/p/1.html" target="_blank">旅游出行</a></label><label><a href="/app/lists/dir/lvyouchuxing/p/1.html" target="_blank">住行</a></label></p>
+					<p>分类：<label><a href="/app/lists/dir/lvyouchuxing/p/1.html" target="_blank">出行</a></label><label><a href="/app/lists/dir/lvyouchuxing/p/1.html" target="_blank">住行</a></label></p>
 					
                 </div>
             </div>
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H5dd578d696c441c28f7a48b739854788K.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H172e04cf25764819b731166af54d2479w.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H3bef2734c9024252828d88975e4456721.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H5dd578d696c441c28f7a48b739854788K.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H172e04cf25764819b731166af54d2479w.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H3bef2734c9024252828d88975e4456721.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>乘车卡小程序。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

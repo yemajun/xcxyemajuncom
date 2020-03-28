@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Hc014612536fd456e884f7b368849050cA.jpg"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Hc014612536fd456e884f7b368849050cA.jpg"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H52c6ec00effb49bb8dab89a3b0ee6df2M.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H4bfac10f505b434f8e48f7a859adfa962.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H70bac7fb150b44eab15614436b2c634bM.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H52c6ec00effb49bb8dab89a3b0ee6df2M.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H4bfac10f505b434f8e48f7a859adfa962.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H70bac7fb150b44eab15614436b2c634bM.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>云上财务管理、专业移动办公新时代！ 金蝶云会计，超方便的在线财务记账软件小程序。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

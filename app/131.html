@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U6ae048bf8bf341d7a7122399ad4a4c5ff.jpg"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U6ae048bf8bf341d7a7122399ad4a4c5ff.jpg"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U1a533a7bd9e54e7880fb8fd7ec8eb776d.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Uf0818bad2f7240f282f654a6ee4e64887.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Uc5da1d685ab74ae39b34df2ba0be78f7x.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U1a533a7bd9e54e7880fb8fd7ec8eb776d.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Uf0818bad2f7240f282f654a6ee4e64887.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Uc5da1d685ab74ae39b34df2ba0be78f7x.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>TED英语演讲视频，强大的跟读评测实时单词点击查询功能，生词库，收藏推荐你最爱的演讲，打卡记录学习时长。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

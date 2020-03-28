@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H6b3b1bb77ff046f39b19ef4f7308d1e24.png"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H6b3b1bb77ff046f39b19ef4f7308d1e24.png"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H98d94d005e2149b4a44ab110cf7dd899y.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H55b52fc1a06c472a85f53ed28aebdd88L.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/H24633b9e8a4247eab580e9fa276c7e4ab.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H98d94d005e2149b4a44ab110cf7dd899y.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H55b52fc1a06c472a85f53ed28aebdd88L.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/H24633b9e8a4247eab580e9fa276c7e4ab.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>朝夕日历—智能的时间助理；长按添加按钮可以语音添加日程；提供列表视图；帮助您简简单单地安排时间，发现生活</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

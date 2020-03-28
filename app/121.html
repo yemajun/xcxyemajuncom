@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Ua71909ecae144cef933527c4e442a3d1b.png"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Ua71909ecae144cef933527c4e442a3d1b.png"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U2169fb0fe0e645509233a06d781ecc7fr.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Ua4ed4a687614450dba363ec65c5b99e6A.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Ua6671bddb906494eb00ee25fd51a3518J.png"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U740a4390073945a9a616fec8ae8675e6c.png"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U2169fb0fe0e645509233a06d781ecc7fr.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Ua4ed4a687614450dba363ec65c5b99e6A.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Ua6671bddb906494eb00ee25fd51a3518J.png"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U740a4390073945a9a616fec8ae8675e6c.png"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>兼职猫是全国领先的兼职求职平台，每天更新20万招聘岗位，已为千万大学生找到兼职工作。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏

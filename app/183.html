@@ -53,7 +53,7 @@
         <div class="detailLeft fl">
             <div class="data clear">
                 <div class="img fl">
-                    <img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Ueaf96c9fc7a440d5a5e755d576ddfca97.jpg"/>
+                    <img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Ueaf96c9fc7a440d5a5e755d576ddfca97.jpg"/>
                 </div>
                 <div class="dataList fl">
 					<div class="clear">
@@ -67,7 +67,7 @@
                 <h3><label></label>小程序快照</h3>
                 <div class="imgbox">
                     <ul class="imgsroll clear">
-						<li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U54c56a871e98494f8c7c2b13df48b92eU.jpg"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Ud53fb23bc2cf422993edd3f15758784aX.jpg"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/Udf9cf252c68f40509f686ab7035268f6g.jpg"/></li><li><img onload="setImgWH(this)" src="https://ae01.alicdn.com/kf/U9af999efd3dc4a2a9bb07f363be58f06S.jpg"/></li>					</ul>
+						<li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U54c56a871e98494f8c7c2b13df48b92eU.jpg"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Ud53fb23bc2cf422993edd3f15758784aX.jpg"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/Udf9cf252c68f40509f686ab7035268f6g.jpg"/></li><li><img onload="setImgWH(this)" data-original="https://ae01.alicdn.com/kf/U9af999efd3dc4a2a9bb07f363be58f06S.jpg"/></li>					</ul>
                 </div>
                 <h3><label></label>小程序简介</h3>
                 <p>国务院客户端小程序是国务院发布政务信息和提供在线服务的新媒体平台，由国务院办公厅主办，中国政府网运行中心负责运行维护。</p>
@@ -121,7 +121,14 @@
         <img src=""/>
     </div>
 </div>
-
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+	placeholder : "https://ae01.alicdn.com/kf/U5f7403b223a844d9b610f135aba24fb7l.png",
+	threshold :2000,
+	effect:"fadeIn"
+});
+</script>
 <script type="text/javascript">
     $(function () {
         //二维码显示隐藏
